@@ -8,7 +8,7 @@ This repository contains the analysis code accompanying the manuscript:
 ## Contents
 
 ### R
-`statistical_analyses.R`
+`statistical_analyses_SUBEMO.R`
 
 R code used for behavioral analyses, correlations, robustness and
 sensitivity analyses, ROI analyses, and figure generation.
