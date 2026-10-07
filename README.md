@@ -8,15 +8,34 @@ This repository contains the analysis code accompanying the manuscript:
 ## Contents
 
 ### R
+
 `statistical_analyses_SUBEMO.R`
 
 R code used for behavioral analyses, correlations, robustness and
 sensitivity analyses, ROI analyses, and figure generation.
 
 ### SPM
-`spm_analysis_batch.m`
 
-MATLAB/SPM code used for the fMRI analyses.
+`SPM/`
+
+MATLAB/SPM scripts used for preprocessing and first- and second-level
+fMRI analyses, as well as ROI extraction.
+
+The scripts provided in the `SPM` folder represent the analysis framework
+used in the study. During the analyses, the same first- and second-level
+batch structures were reused for several planned and follow-up comparisons
+by modifying the relevant first-level contrast definitions and/or the
+contrast images entered into the second-level models.
+
+Therefore, separate scripts are not provided for every individual contrast
+or follow-up analysis. The provided first-level script documents the model
+specification and representative contrast definitions, while the second-level
+scripts illustrate the flexible-factorial analyses without a covariate and
+with STAI-State or STAI-Trait.
+
+To reproduce a specific comparison, the relevant first-level contrast weights
+and second-level contrast-image selections should be modified accordingly
+while retaining the model structure described in the manuscript.
 
 ## Software
 
